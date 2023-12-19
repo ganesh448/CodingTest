@@ -7,6 +7,8 @@ public class AnagramChecker {
 	public static void main(String[] args) {
 		String str1 = "cat";
 		String str2 = "dog";
+
+		// Inside the main method
 		if(areAnagrams(str1, str2)) {
 			System.out.println(str1+" and " + str2+" are anagrams");
 			
@@ -15,6 +17,7 @@ public class AnagramChecker {
 			System.out.println(str1+" and "+str2+" are not anagrams.");
 		}
 	}
+	// Add the following method to sort a string
 	public static boolean areAnagrams(String str1, String str2) {
 		str1 = str1.replaceAll("\\s","").toLowerCase();
 		str2 = str2.replaceAll("\\s","").toLowerCase();
